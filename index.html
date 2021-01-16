@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello!</title>
+    <title>Landmarks WIP - Chelsea Thompto</title>
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     
+    <!-- import face-api.js -->
+    <script src="https://rawgit.com/justadudewhohacks/face-api.js/master/dist/face-api.min.js"></script>
+    
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    
+    <!-- import fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap" rel="stylesheet">
+    
   </head>  
   <body>
-    <h1>Hi there!</h1>
-    
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
+    <h1>Face Recognition Studio Experiments</h1><br>
+    <p>Laboratory Residency 1/14/2020<p><br>
+    <div id="container">
+      <video id="video" width="720" height="405" autoplay="true" muted></video>
+      <div id="center">
+        <canvas id="ov1" width="720" height="405"></canvas>
+      </div>
+    </div>
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
   </body>
