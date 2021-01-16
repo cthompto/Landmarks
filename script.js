@@ -1,13 +1,13 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+// log the start of the script
+console.log("start");
 
-// prints "hi" in the browser's dev tools console
-console.log("hi");
-
+// set location of recognition models
 const MODEL_URL = 'https://rawgit.com/justadudewhohacks/face-api.js/master/weights'
 
+// identitfy video element from html
 const video = document.getElementById("video")
 
+// load models
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri(MODEL_URL),
   faceapi.nets.faceLandmark68Net.loadFromUri(MODEL_URL),
@@ -16,7 +16,10 @@ Promise.all([
   faceapi.nets.ageGenderNet.loadFromUri(MODEL_URL)
 ]).then(startVideo)
 
+// start video from webcam
 function startVideo() {
+  
+  // old way
   /*
   navigator.getUserMedia({ video: {} },
     stream => video.srcObject = stream,
@@ -24,6 +27,7 @@ function startVideo() {
   )
   */
   
+  // new way
   navigator.mediaDevices.getUserMedia({
     video: true,
     audio: false
@@ -36,6 +40,7 @@ function startVideo() {
   
 }
 
+// execute and display results
 video.addEventListener("play", () => {
   const canvas = faceapi.createCanvasFromMedia(video)
   var item = document.getElementById("center")
@@ -55,6 +60,8 @@ video.addEventListener("play", () => {
       drawBox.draw(canvas)
     })
   }, 100)
+  
+  // wipe drawing, for use when "canvas.getContext..." isn't active in execute and display section
   /*
   setInterval(async() => {
      canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
