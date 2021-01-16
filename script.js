@@ -50,7 +50,7 @@ video.addEventListener("play", () => {
   setInterval(async() => {
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions().withAgeAndGender()
     const resizedDetections = faceapi.resizeResults(detections, displaySize)
-    canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
+    //canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
     //faceapi.draw.drawDetections(canvas, resizedDetections)
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
@@ -62,9 +62,10 @@ video.addEventListener("play", () => {
   }, 100)
   
   // wipe drawing, for use when "canvas.getContext..." isn't active in execute and display section
-  /*
+  
   setInterval(async() => {
      canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
+     console.log("wipe")
   }, 15000)
-  */
+  
 })

@@ -1,12 +1,17 @@
 /* CSS files add styling rules to your content */
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap');
+
 body {
   font-family: 'Source Code Pro', monospace;
 }
 
 h1 {
-  font-style: italic;
   color: #373fff;
+}
+
+p {
+  color: magenta;
 }
 
 #container {
