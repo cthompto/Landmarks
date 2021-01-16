@@ -45,7 +45,6 @@ video.addEventListener("play", () => {
   const canvas = faceapi.createCanvasFromMedia(video)
   var item = document.getElementById("center")
   item.replaceChild(canvas, item.firstChild)
-  const item2 = document.getElementById("genderlabel")
   const displaySize = { width: video.width, height: video.height }
   faceapi.matchDimensions(canvas, displaySize)
   setInterval(async() => {
@@ -64,7 +63,12 @@ video.addEventListener("play", () => {
   
   // wipe drawing, for use when "canvas.getContext..." isn't active in execute and display section
   
-  setInterval(async() =>
+  setInterval(async() =>{
+    const gender = faceapi.predictAgeAndGender()
+    console.log(gender)
+    const item2 = document.getElementById("genderlabel")
+    item2.replaceChild(gender, item.firstChild)
+  }, 5000)
   
   setInterval(async() => {
      canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
