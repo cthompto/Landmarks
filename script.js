@@ -64,9 +64,8 @@ video.addEventListener("play", () => {
   // wipe drawing, for use when "canvas.getContext..." isn't active in execute and display section
   
   setInterval(async() =>{
-    const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions().withAgeAndGender()
-    const resizedDetections = faceapi.resizeResults(detections, displaySize)
-    console.log(resizedDetections[0].expressions)
+    const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
+    console.log(detections[0].expressions)
       //const item2 = document.getElementById("genderlabel")
      // item2.replaceChild(happiness, item.firstChild)
   }, 5000)
