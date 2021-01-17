@@ -50,7 +50,7 @@ video.addEventListener("play", () => {
   setInterval(async() => {
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions().withAgeAndGender()
     const resizedDetections = faceapi.resizeResults(detections, displaySize)
-    //canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
+    canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
     //faceapi.draw.drawDetections(canvas, resizedDetections)
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
@@ -61,30 +61,27 @@ video.addEventListener("play", () => {
     })
   }, 100)
   
-  // wipe drawing, for use when "canvas.getContext..." isn't active in execute and display section
   
+  // test for extracting top emtion as text
   setInterval(async() =>{
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
     const jsObj = detections[0].expressions
-    const emos = Object.emos(jsObj)
     var hap2 = Math.round(jsObj.happy*100)/100
     function sortByValue(jsObj){
     var sortedArray = [];
-    for(var i in jsObj)
-    {
+    for(var i in jsObj) {
       // Push each JSON Object entry in array by [value, key]
       sortedArray.push([jsObj[i], i]);
     }
     return sortedArray.sort();
-}
-var sortedbyValueJSONArray = sortByValue(jsObj);
+    }
+    var sortedbyValueJSONArray = sortByValue(jsObj);
     console.log(hap2)
-console.table(sortedbyValueJSONArray);
+    console.table(sortedbyValueJSONArray);
     
-      //const item2 = document.getElementById("genderlabel")
-     // item2.replaceChild(happiness, item.firstChild)
   }, 5000)
   
+  // wipe drawing, for use when "canvas.getContext..." isn't active in execute and display section
   setInterval(async() => {
      canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
      console.log("wipe")
