@@ -66,9 +66,8 @@ video.addEventListener("play", () => {
   setInterval(async() =>{
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
     var jsObj = detections[0].expressions
-    
-    var js
-    
+    var hap = jsObj.happy
+    var hap2 = Math.round(jsObj.happy*100)/100
     function sortByValue(jsObj){
     var sortedArray = [];
     for(var i in jsObj)
@@ -79,6 +78,7 @@ video.addEventListener("play", () => {
     return sortedArray.sort();
 }
 var sortedbyValueJSONArray = sortByValue(jsObj);
+    console.log(hap2)
 console.table(sortedbyValueJSONArray);
     
       //const item2 = document.getElementById("genderlabel")
