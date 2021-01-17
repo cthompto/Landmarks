@@ -65,7 +65,8 @@ video.addEventListener("play", () => {
   
   setInterval(async() =>{
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
-    console.log(detections[0].expressions)
+    var express = detections[0].expressions
+    console.log(express)
       //const item2 = document.getElementById("genderlabel")
      // item2.replaceChild(happiness, item.firstChild)
   }, 5000)
