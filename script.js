@@ -65,7 +65,8 @@ video.addEventListener("play", () => {
   
   setInterval(async() =>{
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
-    var jsObj = detections[0].expressions
+    const jsObj = detections[0].expressions
+    const emos = Object.emos(jsObj)
     var hap2 = Math.round(jsObj.happy*100)/100
     function sortByValue(jsObj){
     var sortedArray = [];
