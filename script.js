@@ -65,8 +65,22 @@ video.addEventListener("play", () => {
   
   setInterval(async() =>{
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
-    var express = detections[0].expressions
-    console.log(express)
+    var jsObj = detections[0].expressions
+    
+    var js
+    
+    function sortByValue(jsObj){
+    var sortedArray = [];
+    for(var i in jsObj)
+    {
+      // Push each JSON Object entry in array by [value, key]
+      sortedArray.push([jsObj[i], i]);
+    }
+    return sortedArray.sort();
+}
+var sortedbyValueJSONArray = sortByValue(jsObj);
+console.table(sortedbyValueJSONArray);
+    
       //const item2 = document.getElementById("genderlabel")
      // item2.replaceChild(happiness, item.firstChild)
   }, 5000)
