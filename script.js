@@ -52,17 +52,17 @@ video.addEventListener("play", () => {
     const resizedDetections = faceapi.resizeResults(detections, displaySize)
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
     //faceapi.draw.drawDetections(canvas, resizedDetections)
-    faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
+    //faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
     resizedDetections.forEach( detection => {
       const box = detection.detection.box
-      const drawBox = new faceapi.draw.DrawBox(box, { label: Math.round(detection.age) + " year old " + detection.gender })
+      const drawBox = new faceapi.draw.DrawBox(box, { label: Math.round(detection.age) + " year old " })
       drawBox.draw(canvas)
     })
   }, 100)
   
   
-  // test for extracting top emtion as text
+  // test for extracting top emotion as text
   setInterval(async() =>{
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
     const jsObj = detections[0].expressions
