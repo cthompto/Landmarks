@@ -1,11 +1,13 @@
-Welcome to Glitch
-=================
+# Landmarks
+### By Chelsea Thompto
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+*Landmarks* is an  an exploration of the ways artificial intelligence, and specifically facial recognition, fails to comprehend trans bodies (misgendering) and the threat this failure possesses to trans livelihood as these technologies become increasingly integrated into our daily lives. Containing both a central composed interactive artwork as well as tools and resources for further investigation. 
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-Find out more [about Glitch](https://glitch.com/about).
+
+*Landmarks* asks us to consider how technology sees us and what happens when it fails to see us for who we are?
+
+Find out more [about my work](https://www.chelsea.technology).
 
 
 Your Project
