@@ -38,7 +38,7 @@ Below is a list of artists, authors, and projects from which I draw inspiration 
 ## Credits
 This project is made possible with the following
 
-[]
+[Lab]
 
 [Glitch](https://glitch.com/) for hosting and editing the code.
 
