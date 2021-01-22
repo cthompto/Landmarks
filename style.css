@@ -50,6 +50,6 @@ p.right {
 
 canvas {
   border:2px solid yellow;
-  background-color: white;
-  opacity: 0.95;
+  background-color: lightgray;
+  opacity: 0.9;
 }
