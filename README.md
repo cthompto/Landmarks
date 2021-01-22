@@ -3,7 +3,7 @@
 
 *Landmarks* is an exploration of the ways artificial intelligence, and specifically facial recognition, fails to comprehend trans bodies (misgendering) and the threat this failure possesses to trans livelihood as these technologies become increasingly integrated into our daily lives. Containing both a central composed interactive artwork as well as tools and resources for further investigation. 
 
-This site is under constant construction and revision and will be open for viewing and engagement as is grows and takes on new forms, content and ideas. The intention in doing so is to invite the viewers into the act of coding and building a website and to resist a static form. This constant revision/evolution can also be understood as performance art through the medium of code. 
+This site is under constant construction and revision and will be open for viewing and engagement as it grows and takes on new forms, content, and ideas. The intention in doing so is to invite the viewers into the act of coding and building a website and to resist a static form. This constant revision/evolution can also be understood as performance art through the medium of code. 
 
 *Landmarks* asks us to consider how technology sees us and what happens when it fails to see us for who we are?
 
@@ -15,7 +15,7 @@ Below is a breakdown of the projects files and their purpose.
 
 ### ← README.md
 
-This file, which contains an explanation of the porject at large and the files within.
+This file, which contains an explanation of the project at large and the files within.
 
 ### ← index.html
 
@@ -31,14 +31,15 @@ Main script handling the webcam and facial recognition functions.
 
 
 ## Theory and Inspiration
-Below is a list of artists, authors, and projects from which I draw inspiration for this work.
+This work is part of a larger body of research considering the role “modeling” has played in medical, scientific, computational, and military projects aimed at categorizing and developing subjects inherently resistant to fixity (trans people, rivers, and etc.). 
 
+*Landmarks* is a continuation of the work started in my 2019 project [*Productive Bodies*](https://www.chelseathompto.com/productive-bodies) and my work [*Transcode Manifesto*](https://www.chelseathompto.com/transcode-manifesto) and is inspired by Sandy Stone's [THE *EMPIRE* STRIKES BACK: A POSTTRANSSEXUAL MANIFESTO](https://sandystone.com/empire-strikes-back.pdf), Dark Inquiry’s [Rhetorical Software](https://thenewinquiry.com/dark-inquiry/), Legacy Russell’s [*Glitch Feminism*](https://www.versobooks.com/books/3668-glitch-feminism), and others. 
 
 
 ## Credits
 This project is made possible with the following
 
-[Lab]
+[Laboratory Residency](https://residency.laboratoryspokane.com/) for providing space/time and finical support in the form of a digital artist residency.
 
 [Glitch](https://glitch.com/) for hosting and editing the code.
 
