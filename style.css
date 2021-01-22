@@ -4,21 +4,25 @@
 
 body {
   font-family: 'Source Code Pro', monospace;
-  display: flex;  
-  flex-wrap: wrap;
+  display: block;  
   padding: 20px;
+  background-color: black;
 }
 
 h1 {
-  color: limegreen;
+  color: cyan;
 }
 
 p {
   color: magenta;
 }
 
-p.center {
+p.mid {
   text-align: center;
+}
+
+p.right {
+  text-align: right;
 }
 
 #container {
@@ -37,10 +41,11 @@ p.center {
 }
 
 #video {
-  align: center;
+  
 }
 
 canvas {
   border:2px solid yellow;
   background-color: white;
+  opacity: 0.95;
 }
