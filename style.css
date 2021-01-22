@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Source Code Pro', monospace;
+  align-content: center;
 }
 
 h1 {
@@ -27,6 +28,10 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#video {
+  align-content: center;
 }
 
 canvas {
