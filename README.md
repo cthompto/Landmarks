@@ -33,7 +33,7 @@ Main script handling the webcam and facial recognition functions.
 ## Theory and Inspiration
 This work is part of a larger body of research considering the role “modeling” has played in medical, scientific, computational, and military projects aimed at categorizing and developing subjects inherently resistant to fixity (trans people, rivers, and etc.). 
 
-*Landmarks* is a continuation of the work started in my 2019 project [*Productive Bodies*](https://www.chelseathompto.com/productive-bodies) and my work [*Transcode Manifesto*](https://www.chelseathompto.com/transcode-manifesto) and is inspired by Sandy Stone's [THE *EMPIRE* STRIKES BACK: A POSTTRANSSEXUAL MANIFESTO](https://sandystone.com/empire-strikes-back.pdf), Dark Inquiry’s [Rhetorical Software](https://thenewinquiry.com/dark-inquiry/), Legacy Russell’s [*Glitch Feminism*](https://www.versobooks.com/books/3668-glitch-feminism), and others. 
+*Landmarks* is a continuation of the work started in my projects [*Productive Bodies*](https://www.chelseathompto.com/productive-bodies) and [*Transcode Manifesto*](https://www.chelseathompto.com/transcode-manifesto) and is also inspired by Sandy Stone's [THE *EMPIRE* STRIKES BACK: A POSTTRANSSEXUAL MANIFESTO](https://sandystone.com/empire-strikes-back.pdf), Dark Inquiry’s [Rhetorical Software](https://thenewinquiry.com/dark-inquiry/), Legacy Russell’s [*Glitch Feminism*](https://www.versobooks.com/books/3668-glitch-feminism), and others. 
 
 
 ## Credits
