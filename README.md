@@ -9,6 +9,7 @@ This site is under constant construction and revision and will be open for viewi
 
 Find out more [about my work](https://www.chelsea.technology).
 
+To view the live site next to the code, click the "Show" dropdown on the top left of the page and select "Next to The Code".
 
 ## Site Guide
 Below is a breakdown of the projects files and their purpose.
