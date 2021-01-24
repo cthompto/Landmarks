@@ -63,24 +63,25 @@ video.addEventListener("play", () => {
   
   
   // test for extracting top emotion as text
+  /*
   setInterval(async() =>{
     const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
-    const jsObj = detections[0].expressions
-    var hap2 = Math.round(jsObj.happy*100)/100
-    function sortByValue(jsObj){
+    //const jsObj = detections[0].expressions
+    var hap2 = Math.round(detections.happy*100)/100
+    function sortByValue(detections){
     var sortedArray = [];
-    for(var i in jsObj) {
+    for(var i in detections) {
       // Push each JSON Object entry in array by [value, key]
-      sortedArray.push([jsObj[i], i]);
+      sortedArray.push([detections[i], i]);
     }
     return sortedArray.sort();
     }
-    var sortedbyValueJSONArray = sortByValue(jsObj);
+    var sortedbyValueJSONArray = sortByValue(detections);
     console.log(hap2)
     console.table(sortedbyValueJSONArray);
     
   }, 5000)
-  
+  */
   // wipe drawing, for use when "canvas.getContext..." isn't active in execute and display section
   setInterval(async() => {
      canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
