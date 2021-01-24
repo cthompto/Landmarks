@@ -30,7 +30,7 @@ p.right {
 }
 
 p.fn {
-  font-weight: 200;
+  font-weight: 100;
   color: yellow;
 }
 
@@ -54,7 +54,8 @@ a:active {
   width: 720px;
   height: 405px;
   position: relative;
-  border:2px solid cyan;
+  margin: auto;
+  /*border:2px solid cyan;*/
 }
 
 #center {
@@ -70,7 +71,7 @@ a:active {
 }
 
 canvas {
-  border:2px solid yellow;
+  border:1px solid yellow;
   background-color: lightgray;
   opacity: 0.95;
 }
