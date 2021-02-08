@@ -34,6 +34,16 @@ p.fn {
   color: yellow;
 }
 
+p.em {
+  font-weight: 400;
+  color: lightgray;
+}
+
+p.fnem {
+  font-weight: 100;
+  color: yellow;
+}
+
 a:link {
   color: white;
 }
@@ -58,15 +68,23 @@ a:active {
   /*border:2px solid cyan;*/
 }
 
-.container2 {
-  width: 360px;
-  height: 203px;
+.container3 {
+  width: 720px;
+  height: auto;
   position: relative;
   margin: auto;
-  display: flex;  
-  flex-wrap: wrap;
   /*border:2px solid cyan;*/
 }
+
+.container4 {
+  width: 75%;
+  height: 100%;
+  margin-left: 12.5%;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+}
+
 
 #center {
   width: 100%;
@@ -100,13 +118,17 @@ a:active {
   left: 0;
 }
 
+#centerem2 {
+  width: 75%;
+  height: 100%;
+  margin-left: 12.5%;
+  margin-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 #video {
   
-}
-
-canvas {
-  border:1px solid yellow;
-  background-color: lightgray;
-  opacity: 0.95;
 }

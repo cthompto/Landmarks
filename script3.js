@@ -43,7 +43,7 @@ function startVideo() {
 // execute and display results
 video.addEventListener("play", () => {
   const canvas = faceapi.createCanvasFromMedia(video)
-  var item = document.getElementById("center")
+  var item = document.getElementById("centerem")
   item.replaceChild(canvas, item.firstChild)
   const displaySize = { width: video.width, height: video.height }
   faceapi.matchDimensions(canvas, displaySize)
@@ -55,41 +55,16 @@ video.addEventListener("play", () => {
       .withAgeAndGender()
     const resizedDetections = faceapi.resizeResults(detections, displaySize)
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
+    const ctx = canvas.getContext('2d')
+    ctx.fillStyle = 'rgba(0,0,0)'
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
     //faceapi.draw.drawDetections(canvas, resizedDetections)
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
-    faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
+    //faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
     //resizedDetections.forEach( detection => {
       //const box = detection.detection.box
       //const drawBox = new faceapi.draw.DrawBox(box, { label: Math.round(detection.age) + " year old " })
       //drawBox.draw(canvas)
     //})
   }, 200)
-  
   })
-  // test for extracting top emotion as text not using right now but too much of a pack rat to delete
-  /*
-  setInterval(async() =>{
-    const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceExpressions()
-    //const jsObj = detections[0].expressions
-    var hap2 = Math.round(detections.happy*100)/100
-    function sortByValue(detections){
-    var sortedArray = [];
-    for(var i in detections) {
-      // Push each JSON Object entry in array by [value, key]
-      sortedArray.push([detections[i], i]);
-    }
-    return sortedArray.sort();
-    }
-    var sortedbyValueJSONArray = sortByValue(detections);
-    console.log(hap2)
-    console.table(sortedbyValueJSONArray);
-    
-  }, 5000)
-  */
-  // wipe drawing, for use when "canvas.getContext..." isn't active in execute and display section
-  /*
-  setInterval(async() => {
-     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
-     console.log("wipe")
-  }, 15000)
-  */
