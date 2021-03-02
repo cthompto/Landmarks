@@ -23,7 +23,7 @@ This file, which contains an explanation of the project at large and the files w
 
 ### ← index.html
 
-Currently houses/displays my main explorations with live facial recognition using [face-api.js](https://github.com/justadudewhohacks/face-api.js/).
+Cover compostion, my questions/explroations with live facial recognition using [face-api.js](https://github.com/justadudewhohacks/face-api.js/).
 
 ### ← stages.html
 
@@ -33,17 +33,25 @@ Second composition of the project, featuring text and a 4 panel interactive visu
 
 Third composition of the project, featuring text by Jorge Luis Borges and Sandy Stone. Getting approaching the landmark metaphor: thinking of facial recognition as mapping and the body as a landscape.
 
+### ← machine.html
+
+Forth composition of the project, featuring still image facial recognition, studio shot photos, and AI generated faces. Considering how gender can be expressed to a machine and what machines say to one another.
+
 ### ← style.css
 
-Barebones styling for index.html.
+Styling for all pages.
 
-### ← style2.css
+### ← ~~style2.css~~
 
-Styling for stages.html, will eventually be folded into a single style sheet.
+(Deprecated) ~~Styling for stages.html, will eventually be folded into a single style sheet.~~
 
-### ← style3.css
+### ← ~~style3.css~~
 
-Styling for empire.html, will eventually be folded into a single style sheet.
+(Deprecated) ~~Styling for empire.html, will eventually be folded into a single style sheet.~~
+
+### ← ~~style4.css~~
+
+(Deprecated) ~~Styling for machine.html, will eventually be folded into a single style sheet.~~
 
 ### ← script.js
 
@@ -57,12 +65,16 @@ Script handling the webcam and facial recognition functions on stages.html
 
 Script handing the webcam and facial recognition function on empire.html
 
+### ← script4.js
+
+Script handing the still image facial recognition function on machine.html
+
 
 ## Development Notes/Goals/Ideas/Issues
 
 - Code is currently all over the place and not well organized, allowing it to remain messy as the pages and compositions grow.
 
-- Planning to add 1-2 more compositions based on live webcam feedback before shifting focus slightly to still image recognition and some 3D model integrations.
+- Planning to add at least 1 more compositions based on live webcam feedback while also shifting focus slightly to still image recognition and some 3D model integrations.
 
 - On deck Landmarks of the landscape and of the body - exploring this metaphor through ... ?
 

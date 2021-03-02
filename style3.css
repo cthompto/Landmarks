@@ -1,4 +1,10 @@
-/* CSS files add styling rules to your content */
+/* CSS files add styling rules to your content 
+
+
+NO LONGER IN USE 3/2/2021
+
+
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,700;1,900&display=swap');
 
@@ -31,6 +37,7 @@ p.right {
 
 p.fn {
   font-weight: 100;
+  padding: 10px;
   color: yellow;
 }
 

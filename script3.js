@@ -12,8 +12,6 @@ Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri(MODEL_URL),
   faceapi.nets.faceLandmark68Net.loadFromUri(MODEL_URL),
   faceapi.nets.faceRecognitionNet.loadFromUri(MODEL_URL),
-  faceapi.nets.faceExpressionNet.loadFromUri(MODEL_URL),
-  faceapi.nets.ageGenderNet.loadFromUri(MODEL_URL)
 ]).then(startVideo)
 
 // start video from webcam
@@ -51,8 +49,6 @@ video.addEventListener("play", () => {
     const detections = await faceapi
       .detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
       .withFaceLandmarks()
-      .withFaceExpressions()
-      .withAgeAndGender()
     const resizedDetections = faceapi.resizeResults(detections, displaySize)
     canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height)
     const ctx = canvas.getContext('2d')
