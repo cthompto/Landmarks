@@ -1,9 +1,9 @@
 # Landmarks
 ### By Chelsea Thompto
 
-*Landmarks* is an exploration of the ways artificial intelligence, and specifically facial recognition, fails to comprehend trans bodies (misgendering) and the threat this failure possesses to trans livelihood as these technologies become increasingly integrated into our daily lives. Containing both a central composed interactive artwork as well as tools and resources for further investigation. 
+*Landmarks* is an exploration of the ways artificial intelligence, and specifically facial recognition, fails to comprehend trans bodies (misgendering) and the threat this failure possesses to trans livelihood as these technologies become increasingly integrated into our daily lives. The work consists of an interactive website featuring compositions that explore these issues. 
 
-This site is under constant construction and revision and will be open for viewing and engagement as it grows and takes on new forms, content, and ideas. The intention in doing so is to invite the viewers into the act of coding and building a website and to resist a static form. This constant revision/evolution can also be understood as performance art through the medium of code. 
+This site is under constant construction and revision and will be open for viewing and engagement as it grows and takes on new forms, content, and ideas. The intention in doing so is to invite the viewers into the act of coding and to resist a static form. This constant revision/evolution can also be understood as performance art through the medium of code. 
 
 *Landmarks* asks us to consider how technology sees us and what happens when it fails to see us for who we are?
 

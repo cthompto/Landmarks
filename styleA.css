@@ -1,10 +1,4 @@
-/* CSS files add styling rules to your content 
-
-
-NO LONGER IN USE 3/2/2021
-
-
-*/
+/* Test for video resizing */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,700;1,900&display=swap');
 
@@ -19,16 +13,43 @@ h1 {
   color: cyan;
 }
 
-h1.mid{
+h1.mid {
   text-align: center;
+}
+
+h1.mid2 {
+  text-align: center;
+  margin: auto;
+}
+
+pre {
+  color: magenta;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 75%;
 }
 
 p {
   color: magenta;
 }
 
+p.stages {
+  color: magenta;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+p.video-break {
+  line-height: 75%;
+}
+
 p.mid {
   text-align: center;
+}
+
+p.mid2 {
+  text-align: center;
+  margin: auto;
 }
 
 p.right {
@@ -51,6 +72,16 @@ p.fnem {
   color: yellow;
 }
 
+p.fnem2 {
+  font-weight: 100;
+  color: yellow;
+}
+
+dl.fnem2 {
+  font-weight: 100;
+  color: yellow;
+}
+
 a:link {
   color: white;
 }
@@ -67,11 +98,29 @@ a:active {
   color: white;
 }
 
+.div-text1 {
+   padding: -10px;
+}
+
+img {
+  padding: 0;
+}
+
 .container {
-  width: 720px;
-  height: 405px;
+  width: 75%;
+  height: 75%;
   position: relative;
   margin: auto;
+  /*border:2px solid cyan;*/
+}
+
+.container2 {
+  width: 360px;
+  height: 203px;
+  position: relative;
+  margin: auto;
+  display: flex;  
+  flex-wrap: wrap;
   /*border:2px solid cyan;*/
 }
 
@@ -92,6 +141,25 @@ a:active {
   left: 0;
 }
 
+.containerm {
+  width: 1024px;
+  position: relative;
+  margin: auto;
+  display: flex;  
+  flex-wrap: wrap;
+  padding: 0;
+  /*border:2px solid cyan;*/
+}
+
+.containerm2 {
+  width: 33%;
+  position: relative;
+  margin: auto;
+  display: flex;  
+  flex-wrap: wrap;
+  padding: 0;
+  /*border:2px solid cyan;*/
+}
 
 #center {
   width: 100%;
@@ -135,7 +203,14 @@ a:active {
   left: 0;
 }
 
-
 #video {
   
+}
+
+canvas.cover {
+  width: 100%;
+  height: 100%;
+  border: 1px solid yellow;
+  background-color: lightgray;
+  opacity: 0.92;
 }
