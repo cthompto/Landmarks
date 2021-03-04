@@ -1,3 +1,4 @@
+//for stages.html
 // log the start of the script
 console.log("start");
 
@@ -30,6 +31,7 @@ function startVideo() {
   */
   
   // new way
+  console.log("models loaded");
   navigator.mediaDevices.getUserMedia({
     video: true,
     audio: false
@@ -41,6 +43,7 @@ function startVideo() {
       video3.srcObject = cameraStream; 
     }
   )
+  console.log("videos started");
 }
 
 // execute and display results

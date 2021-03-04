@@ -1,3 +1,4 @@
+//for machine.html
 // log the start of the script
 console.log("start");
 
@@ -20,6 +21,7 @@ Promise.all([
 
 
 async function startRead() {
+  console.log("models loaded")
   const canvas = faceapi.createCanvasFromMedia(img)
   var item = document.getElementById("center")
   item.replaceChild(canvas, item.firstChild)
@@ -73,4 +75,5 @@ async function startRead() {
           result.detection.box.bottomRight
         ).draw(canvas2)
       })
+  console.log("detections output")
 }
