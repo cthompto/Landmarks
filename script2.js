@@ -46,15 +46,25 @@ function startVideo() {
 // execute and display results
 video.addEventListener("play", () => {
   const canvas = faceapi.createCanvasFromMedia(video)
+  canvas.className = 'stages'
   var item = document.getElementById("center")
   item.replaceChild(canvas, item.firstChild)
   const canvas2 = faceapi.createCanvasFromMedia(video)
+  canvas2.className = 'stages'
   var item2 = document.getElementById("center2")
   item2.replaceChild(canvas2, item2.firstChild)
   const canvas3 = faceapi.createCanvasFromMedia(video)
+  canvas3.className = 'stages'
   var item3 = document.getElementById("center3")
   item3.replaceChild(canvas3, item3.firstChild)
-  const displaySize = { width: video.width, height: video.height }
+  const canvas4 = faceapi.createCanvasFromMedia(video)
+  canvas4.className = 'exploit'
+  var item4 = document.getElementById("center4")
+  item4.replaceChild(canvas4, item4.firstChild)
+  const ctx4 = canvas4.getContext('2d')
+  ctx4.fillStyle = 'rgb(0,0,0)'
+  ctx4.fillRect(0, 0, canvas4.width, canvas4.height)
+  const displaySize = { width: canvas.width/2, height: canvas.height/2 }
   faceapi.matchDimensions(canvas, displaySize)
   faceapi.matchDimensions(canvas2, displaySize)
   faceapi.matchDimensions(canvas3, displaySize)

@@ -41,9 +41,10 @@ function startVideo() {
 // execute and display results
 video.addEventListener("play", () => {
   const canvas = faceapi.createCanvasFromMedia(video)
+  canvas.className = 'stages'
   var item = document.getElementById("centerem")
   item.replaceChild(canvas, item.firstChild)
-  const displaySize = { width: video.width, height: video.height }
+  const displaySize = { width: canvas.width, height: canvas.height }
   faceapi.matchDimensions(canvas, displaySize)
   setInterval(async() => {
     const detections = await faceapi

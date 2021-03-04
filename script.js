@@ -46,7 +46,7 @@ video.addEventListener("play", () => {
   canvas.className = 'cover';
   var item = document.getElementById("center")
   item.replaceChild(canvas, item.firstChild)
-  const displaySize = { width: video.width, height: video.height }
+  const displaySize = { width: canvas.width, height: canvas.height }
   faceapi.matchDimensions(canvas, displaySize)
   setInterval(async() => {
     const detections = await faceapi
