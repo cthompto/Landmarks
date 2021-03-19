@@ -102,6 +102,11 @@ a:active {
    padding: -10px;
 }
 
+div.fn {
+  margin: auto;
+  width: 75%;
+}
+
 img {
   padding: 0;
 }
