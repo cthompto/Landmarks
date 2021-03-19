@@ -31,11 +31,15 @@ Second composition of the project, featuring text and a 4 panel interactive visu
 
 ### ← empire.html
 
-Third composition of the project, featuring text by Jorge Luis Borges and Sandy Stone. Getting approaching the landmark metaphor: thinking of facial recognition as mapping and the body as a landscape.
+Third composition of the project, featuring text by Jorge Luis Borges and Sandy Stone. Getting to the landmark metaphor: thinking of facial recognition as mapping and the body as a landscape.
 
 ### ← machine.html
 
 Forth composition of the project, featuring still image facial recognition, studio shot photos, and AI generated faces. Considering how gender can be expressed to a machine and what machines say to one another.
+
+### ← rote.html
+
+(Currently in Development) The fifth composition. This page will invite viewers to explore landmark detection by inviting them to manually execute the process on an image of their choosing. 
 
 ### ← style.css
 
