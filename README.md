@@ -21,6 +21,14 @@ Below is a breakdown of the project files and their purpose.
 
 This file, which contains an explanation of the project at large and the files within.
 
+### ← package.json
+
+This file handles the server information and its dependencies.
+
+### ← server.js
+
+Script running server side, handling interactions with the client and serving pages.
+
 ### ← index.html
 
 Cover compostion, my questions/explroations with live facial recognition using [face-api.js](https://github.com/justadudewhohacks/face-api.js/).
@@ -45,18 +53,6 @@ Forth composition of the project, featuring still image facial recognition, stud
 
 Styling for all pages.
 
-### ← ~~style2.css~~
-
-(Deprecated) ~~Styling for stages.html, will eventually be folded into a single style sheet.~~
-
-### ← ~~style3.css~~
-
-(Deprecated) ~~Styling for empire.html, will eventually be folded into a single style sheet.~~
-
-### ← ~~style4.css~~
-
-(Deprecated) ~~Styling for machine.html, will eventually be folded into a single style sheet.~~
-
 ### ← script.js
 
 Main script handling the webcam and facial recognition functions.
@@ -73,16 +69,16 @@ Script handing the webcam and facial recognition function on empire.html
 
 Script handing the still image facial recognition function on machine.html
 
+### ← drawingapp.js
+
+Script for creating in browser drawing tool used on rote.html.
+
 
 ## Development Notes/Goals/Ideas/Issues
 
-- Code is currently all over the place and not well organized, allowing it to remain messy as the pages and compositions grow.
-
-- Planning to add at least 1 more compositions based on live webcam feedback while also shifting focus slightly to still image recognition and some 3D model integrations.
+- Update - 3/30: Just went from a static site to a node.js server. This will allow me to write and host an in-browser drawing allplication for people to manually explore facial recognition. It will also allow me to invite people to submit their drawings.
 
 - On deck Landmarks of the landscape and of the body - exploring this metaphor through ... ?
-
-- Formatting is wonky because I am pushing and pulling the compositions around based on my screen. Once things are finalized a bit more I will recode to be mobile-friendly and more compatible but for now it will remain a little lumpy in places. I kinda like it that way.
 
 
 ## Theory and Inspiration
