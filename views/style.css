@@ -267,3 +267,9 @@ canvas.placeholder {
   height: 100px;
   background-color: black;
 }
+
+#drawingBoard {
+  background: lightgrey;
+  margin: auto;
+  display: flex;
+}

@@ -10,11 +10,10 @@
     <!-- import stylesheet -->
     <link rel="stylesheet" href="/style.css">
     
-    <!-- import face-api.js -->
-    <script src="https://rawgit.com/justadudewhohacks/face-api.js/master/dist/face-api.min.js"></script>
-    
-    <!-- import the javascript file that processes the still images-->
-    <script src="/script4.js" defer></script>
+   <!-- Load the Paper.js library -->
+    <script type="text/javascript" src="/paper-full.js"></script>
+    <!-- Load your Paper.js file -->    
+    <script type="text/paperscript" src="drawingapp.js" canvas="drawingBoard"></script>
     
   </head>  
   
@@ -22,6 +21,34 @@
     <div class="containerm2">
       <h1 class="mid2">Rote</h1><br><br>
     </div>
+    <div class="container4">
+      <br><br>
+      <p class="mid">
+        How do we know a body is a body, a face a face? 
+      </p>
+      <br><br>
+    </div>
+    <div class="containerm2">
+      <dl class="fnem2">
+        <b>Facial Landmark Rules:</b><br><br>
+        Brows:	5 Points and 4 Lines Each<br><br>
+        Eyes:	6 Points and 6 Lines Each<br><br>
+        Nose:	9 Points and 8 Lines<br>
+        <dd>4 Points from Bridge To Tip of Nose<br>
+        5 Points from Left to Right Nostril<br><br></dd>
+        Lips:	20 Points and 20 Lines<br>
+        <dd>10 Points for Upper Lip<br>
+          10 Points for Lower Lip</dd><br><br>
+        For Each Lip:<br>
+        <dd>5 Points on Outer Edge<br>
+        3 Points on Inner Edge<br>
+          Corners overlap<br><br></dd>
+        Jaw:	17 Points and 16 Lines<br>
+			  <dd>8 per side ending at Ear</dd><br>
+      </dl>
+      <br>
+    </div>
+    <canvas id="drawingBoard", width="800", height="1000"></canvas>
     <div class="fn">
       <p class="mid">
         <a href="https://landmarks.glitch.me">Main</a>
@@ -41,4 +68,5 @@
       </p>
     </div>
   </body>
+  <img id="bgImg" src="https://cdn.glitch.com/87379bbc-5538-4084-871e-4b2c8fdc8527%2Fmachine1.jpg?v=1613855450344" style="display: none;" /> 
 </html>
