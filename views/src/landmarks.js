@@ -79,6 +79,8 @@ video.addEventListener("play", () => {
   }, 200)
   
   })
+
+
   // test for extracting top emotion as text not using right now but too much of a pack rat to delete
   /*
   setInterval(async() =>{

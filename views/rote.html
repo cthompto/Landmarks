@@ -1,72 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Landmarks - Rote</title>
-    
+
     <!-- import stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
-   <!-- Load the Paper.js library -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Load the Paper.js library -->
     <script type="text/javascript" src="/paper-full.js"></script>
-    <!-- Load your Paper.js file -->    
-    <script type="text/paperscript" src="drawingapp.js" canvas="drawingBoard"></script>
+    <!-- Load your Paper.js file -->
+    <script
+      type="text/paperscript"
+      src="src/rote.js"
+      canvas="drawingBoard"
+    ></script>
     
-  </head>  
-  
+    <!-- import nav-link randomizer-->
+    <script src="src/nav-links.js" defer></script>
+  </head>
+
   <body>
     <div class="containerm2">
-      <h1 class="mid2">Rote</h1><br><br>
+      <h1 class="mid2">Rote</h1>
+      <br /><br />
     </div>
     <div class="container4">
-      <br><br>
+      <br /><br />
       <p class="mid">
-        How do we know a body is a body, a face a face? 
+        How do we know a body is a body, a face a face?
       </p>
-      <br><br>
+      <br /><br />
     </div>
     <div class="containerm2">
       <dl class="fnem2">
-        <b>Facial Landmark Rules:</b><br><br>
-        Brows:	5 Points and 4 Lines Each<br><br>
-        Eyes:	6 Points and 6 Lines Each<br><br>
-        Nose:	9 Points and 8 Lines<br>
-        <dd>4 Points from Bridge To Tip of Nose<br>
-        5 Points from Left to Right Nostril<br><br></dd>
-        Lips:	20 Points and 20 Lines<br>
-        <dd>10 Points for Upper Lip<br>
-          10 Points for Lower Lip</dd><br><br>
-        For Each Lip:<br>
-        <dd>5 Points on Outer Edge<br>
-        3 Points on Inner Edge<br>
-          Corners overlap<br><br></dd>
-        Jaw:	17 Points and 16 Lines<br>
-			  <dd>8 per side ending at Ear</dd><br>
+        <b>Facial Landmark Rules:</b><br /><br />
+        Brows: 5 Points and 4 Lines Each<br /><br />
+        Eyes: 6 Points and 6 Lines Each<br /><br />
+        Nose: 9 Points and 8 Lines<br />
+        <dd>
+          4 Points from Bridge To Tip of Nose<br />
+          5 Points from Left to Right Nostril<br /><br />
+        </dd>
+
+        Lips: 20 Points and 20 Lines<br />
+        <dd>
+          10 Points for Upper Lip<br />
+          10 Points for Lower Lip
+        </dd>
+        <br /><br />
+        For Each Lip:<br />
+        <dd>
+          5 Points on Outer Edge<br />
+          3 Points on Inner Edge<br />
+          Corners overlap<br /><br />
+        </dd>
+
+        Jaw: 17 Points and 16 Lines<br />
+        <dd>8 per side ending at Ear</dd>
+        <br />
       </dl>
-      <br>
+      <br />
     </div>
-    <canvas id="drawingBoard", width="800", height="1000"></canvas>
+    <canvas id="drawingBoard" width="800" height="1000"></canvas>
     <div class="fn">
-      <p class="mid">
-        <a href="https://landmarks.glitch.me">Main</a>
-      </p>
-      <p class="mid">
-        <a href="https://landmarks.glitch.me/stages.html">Stages</a>
-      </p>
-      <p class="mid">
-        <a href="https://landmarks.glitch.me/empire.html">Empire</a>
-      </p>
-      <p class="mid">
-        <a href="https://landmarks.glitch.me/machine.html">Machine</a>
-      </p>
-      <br><br><br><br>
+      <div id="nav-links">
+        <div>
+          <p class="mid">
+             <a href="https://landmarks.glitch.me/stages.html">Stages</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="https://landmarks.glitch.me/empire.html">Empire</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="https://landmarks.glitch.me/machine.html">Machine</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="https://landmarks.glitch.me/rote.html">Rote</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="https://landmarks.glitch.me/index.html">Landmarks</a>
+          </p>
+        </div>
+      </div>
+      <br /><br /><br /><br />
       <p class="fn">
-        (Note: The facial recognition used on this page is not improved or modified based on your engage with this page. No data is collected or shared through this project.<br><br>This project is best viewed on a non-mobile device. As a project in the early stages of development, it may not be fully compatible with all browsers and hardware.<br><br>More information can be found by viewing the source code of this page, either by right clicking on the page and selecting "view source" or by going to <a href="https://glitch.com/edit/#!/landmarks">HERE</a>.)
+        (Note: The facial recognition used on this page is not improved or
+        modified based on your engage with this page. No data is collected or
+        shared through this project.<br /><br />This project is best viewed on a
+        non-mobile device. As a project in the early stages of development, it
+        may not be fully compatible with all browsers and hardware.<br /><br />More
+        information can be found by viewing the source code of this page, either
+        by right clicking on the page and selecting "view source" or by going to
+        <a href="https://glitch.com/edit/#!/landmarks">HERE</a>.)
       </p>
     </div>
   </body>
-  <img id="bgImg" src="https://cdn.glitch.com/87379bbc-5538-4084-871e-4b2c8fdc8527%2Fmachine1.jpg?v=1613855450344" style="display: none;" /> 
+  <img
+    id="bgImg"
+    src="https://cdn.glitch.com/87379bbc-5538-4084-871e-4b2c8fdc8527%2Fmachine1.jpg?v=1613855450344"
+    style="display: none;"
+  />
 </html>
