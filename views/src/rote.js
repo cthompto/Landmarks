@@ -1,6 +1,9 @@
 // Create a raster item using the image tag with id='mona'
 var raster = new Raster("bgImg");
 
+
+
+
 // Move the raster to the center of the view
 raster.position = view.center;
 
@@ -50,3 +53,5 @@ function onKeyDown(event) {
   }
   console.log("a pressed");
 }
+
+

@@ -49,6 +49,10 @@ Forth composition of the project, featuring still image facial recognition, stud
 
 (Currently in Development) The fifth composition. This page will invite viewers to explore landmark detection by inviting them to manually execute the process on an image of their choosing using [Paper.js](http://paperjs.org/).
 
+### ← draft.html + draft.js
+
+(Unlinked) Work space for testing layout and code. Viewable but not listed/linked on the live site.
+
 ### ← style.css
 
 Styling for all pages.

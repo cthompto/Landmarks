@@ -47,7 +47,8 @@ p.mid {
   text-align: center;
 }
 
-p.mid2, a.mid {
+p.mid2,
+a.mid {
   text-align: center;
   margin: auto;
 }
@@ -57,6 +58,14 @@ p.right {
 }
 
 p.fn {
+  font-weight: 100;
+  padding: 10px;
+  color: yellow;
+}
+
+p.fnmid {
+  text-align: center;
+  margin: auto;
   font-weight: 100;
   padding: 10px;
   color: yellow;
@@ -163,6 +172,24 @@ img {
   /*border:2px solid cyan;*/
 }
 
+.container6 {
+  margin-left: 25%;
+  width: 75%;
+  height: 100%;
+}
+
+.container7 {
+  width: 75%;
+  margin-left: 12.5%;
+  height: 100%;
+}
+
+.container8 {
+  margin-right: 25%;
+  width: 75%;
+  height: 100%;
+}
+
 .containerm {
   width: 1024px;
   position: relative;
@@ -174,7 +201,17 @@ img {
 }
 
 .containerm2 {
-  width: 33%;
+  width: 50%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  /*border:2px solid cyan;*/
+}
+
+.containerm3 {
+  width: 50%;
   position: relative;
   margin: auto;
   display: flex;
@@ -250,7 +287,7 @@ img {
 canvas.cover {
   width: 100%;
   height: 100%;
-  /*border: 1px solid yellow;*/
+  border: 1px solid lightgray;
   background-color: lightgray;
   opacity: 0.92;
 }
@@ -282,4 +319,46 @@ canvas.placeholder {
 #nav-links {
   display: block;
   margin: auto;
+}
+
+button.rote {
+  font-family: "Source Code Pro", monospace;
+  color: magenta;
+  padding: 10px;
+  background-color: black;
+  border: 1px dashed grey;
+}
+
+div.rote {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+a.rote {
+  margin: auto;
+}
+
+.drawcont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.drawright {
+  flex: 0 1 auto;
+}
+
+.drawleft {
+  flex: 0 1 auto;
+}
+
+.drawex {
+  width: 400px;
 }
