@@ -10,7 +10,9 @@ raster.position = view.center;
 // before firing the next onMouseDrag event:
 tool.minDistance = 5;
 
-var path;
+var path = [];
+var myCircle;
+var myCircle2;
 
 tool.onMouseDown = function(event) {
   // Create a new path every time the mouse is clicked
@@ -18,7 +20,7 @@ tool.onMouseDown = function(event) {
   path.add(event.point);
   path.strokeColor = "cyan";
   path.strokeWidth = 4;
-  var myCircle = new Path.Circle({
+  myCircle = new Path.Circle({
     center: event.point,
     radius: 5
   });
@@ -32,17 +34,19 @@ tool.onMouseDrag = function(event) {
 
 tool.onMouseUp = function(event) {
   path.simplify(20);
-  var myCircle = new Path.Circle({
+  myCircle2 = new Path.Circle({
     center: event.point,
     radius: 5
   });
-  myCircle.strokeColor = "magenta";
-  myCircle.fillColor = "magenta";
+  myCircle2.strokeColor = "magenta";
+  myCircle2.fillColor = "magenta";
 };
 
 function onKeyDown(event) {
-	if(event.key == 'a') {
-		var paths = path.pop();
-  paths.remove();
-	}
+  if (event.key == "a") {
+    path.remove();
+    myCircle.remove();
+    myCircle2.remove();
+  }
+  console.log("a pressed");
 }

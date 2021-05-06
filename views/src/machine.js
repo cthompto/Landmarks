@@ -9,7 +9,6 @@ const MODEL_URL = 'https://rawgit.com/justadudewhohacks/face-api.js/master/weigh
 const img = document.getElementById("9panel")
 const img2 = document.getElementById("9panel4")
 
-
 // load models
 window.onload = function(){
   Promise.all([
@@ -21,6 +20,7 @@ window.onload = function(){
   ]).then(startRead)
 }
 
+//main reading and rendering function
 async function startRead() {
   console.log("models loaded")
   const canvas = faceapi.createCanvasFromMedia(img)

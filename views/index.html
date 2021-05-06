@@ -1,5 +1,4 @@
 <!--
-
 Landmarks 
 Chelsea Thompto
 2021 -
@@ -9,105 +8,125 @@ Landmarks is an exploration of the ways artificial intelligence, and specificall
 Landmarks Code & Artist Statement:
 https://glitch.com/edit/#!/landmarks 
 
+Facial recognition powered by face-api.js:
+https://github.com/justadudewhohacks/face-api.js/
 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Landmarks - Chelsea Thompto</title>
-    
+    <!-- import icon -->
+    <link rel="icon" href="https://cdn.glitch.com/87379bbc-5538-4084-871e-4b2c8fdc8527%2Flandmarks-favicon3.png?v=1620335222582" />
     <!-- import stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
     <!-- import face-api.js -->
-    <script src="https://rawgit.com/justadudewhohacks/face-api.js/master/dist/face-api.min.js"></script>
-    
+    <script src="build/face-api.min.js"></script>
     <!-- import the main javascript file -->
-    <script src="/script.js" defer></script>
-  </head>  
-  
+    <script src="src/landmarks.js" defer></script>
+    <!-- import nav-link randomizer-->
+    <script src="src/nav-links.js" defer></script>
+  </head>
   <body>
+    <!--Main Content-->
     <div>
-      <h1 class="mid">Landmarks</h1><br><br><br>
+      <h1 class="mid">Landmarks</h1>
+      <br /><br /><br />
       <p class="mid">
         I am plagued by a question.
       </p>
-      <br><br><br><br><br><br><br><br>
+      <br /><br /><br /><br /><br /><br /><br /><br />
       <!--
       <p>
       When confronted by facial recognition. 
       </p>
       -->
-      <br><br><br>
+      <br /><br /><br />
       <p>
-      As a trans person, is it better to be seen accurately?
+        As a trans person, is it better to be seen accurately?
       </p>
-      <br><br><br>
+      <br /><br /><br />
       <p class="right">
-        Or not seen at all... 
+        Or not seen at all...
       </p>
-      <br><br><br><br><br><br><br><br><br><br><br>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <p class="mid">
         How does the algorithm see me? How does it guess what I'm feeling?
       </p>
-      <br><br><br>
+      <br /><br /><br />
       <p>
-        Is there such a thing as a neutral expression? Can it tell the difference between a smile caused by a joke and one that masks rage?
+        Is there such a thing as a neutral expression? Can it tell the
+        difference between a smile caused by a joke and one that masks rage?
       </p>
-      <br><br><br>
+      <br /><br /><br />
       <p class="right">
         Do I want it to be able to tell the difference?
       </p>
-      <br><br><br>
+      <br /><br /><br />
     </div>
-  
-    
-    <!-- container for video and overlay from face-api.js -->
+    <!--Container for video and overlay from face-api.js.-->
     <div class="container">
-      <video id="video" width="100%" height="100%" autoplay="true" muted></video>
+      <video
+        id="video"
+        width="100%"
+        height="100%"
+        autoplay="true"
+        muted
+      ></video>
       <div id="center">
       </div>
     </div>
-    
     <div>
-      <br><br><br><br>
-      <br><br><br><br>
+      <br /><br /><br /><br />
+      <br /><br /><br /><br />
       <p class="mid">
-        To be unknowable to a system may be as liberating as it is dangerous.   
+        To be unknowable to a system may be as liberating as it is dangerous.
       </p>
-      <br><br><br><br><br><br><br><br>
+      <br /><br /><br /><br /><br /><br /><br /><br />
     </div>
+    <!--Footer: Links randomized with nav-links.js-->
     <div class="fn">
-      <p class="mid">
-        <a href="https://landmarks.glitch.me/stages.html">Stages</a>
-      </p>
-      <p class="mid">
-        <a href="https://landmarks.glitch.me/empire.html">Empire</a>
-      </p>
-      <p class="mid">
-        <a href="https://landmarks.glitch.me/machine.html">Machine</a>
-      </p>
-      <!--
-      <p class="mid">
-        <a href="https://landmarks.glitch.me/indexA.html">VIDEO TEST</a>
-      </p> -->
-      <br><br><br>
+      <div id="nav-links">
+        <div>
+          <p class="mid">
+             <a href="https://landmarks.glitch.me/stages.html">Stages</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="https://landmarks.glitch.me/empire.html">Empire</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="https://landmarks.glitch.me/machine.html">Machine</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="https://landmarks.glitch.me/rote.html">Rote</a>
+          </p>
+        </div>
+      </div>
+      <br /><br /><br />
       <p class="fn">
-        (Note: The facial recognition used on this page is not improved or modified based on your engage with this page. No data is collected or shared through this project.<br><br>This project is best viewed on a non-mobile device. As a project in the early stages of development, it may not be fully compatible with all browsers and hardware.<br><br>More information can be found by viewing the source code of this page, either by right clicking on the page and selecting "view source" or by going to <a href="https://glitch.com/edit/#!/landmarks">HERE</a>.)
+        (Note: The facial recognition used on this page is not improved or
+        modified based on your engage with this page. No data is collected or
+        shared through this project.<br /><br />This project is best viewed on a
+        non-mobile device. As a project in the early stages of development, it
+        may not be fully compatible with all browsers and hardware.<br /><br />More
+        information can be found by viewing the source code of this page, either
+        by right clicking on the page and selecting "view source" or by going to
+        <a href="https://glitch.com/edit/#!/landmarks">HERE</a>.)
       </p>
     </div>
-    
+    <!--Script for alert window about webcam facial recognition.-->
     <script type="text/javascript">
-      alert("Welcome to Landmarks, this interactive artwork explores facial recognition and the politics of technologies of visualization. Part of this exploration uses your webcam to display facial recognition outputs. Your data is not stored or shared during this process and the algorithm is not improved or modified based on your image. If you choose not to use your webcam, you can still see the text and layout of the site without the interactive visuals. This project is still in development and will eventually include a parallel version of the site using pre recorded video in place of live webcam feedback. To explore the code and development process, head to: https://glitch.com/edit/#!/landmarks");
+      alert(
+        "Welcome to Landmarks, this interactive artwork explores facial recognition and the politics of technologies of visualization. Part of this exploration uses your webcam to display facial recognition outputs. Your data is not stored or shared during this process and the algorithm is not improved or modified based on your image. If you choose not to use your webcam, you can still see the text and layout of the site without the interactive visuals. This project is still in development and will eventually include a parallel version of the site using pre recorded video in place of live webcam feedback. To explore the code and development process, head to: https://glitch.com/edit/#!/landmarks"
+      );
     </script>
-    <!-- Glitch.com button -->
-    <!--
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
--->
   </body>
 </html>

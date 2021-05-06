@@ -1,10 +1,10 @@
 /* Style for all live pages. */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,700;1,900&display=swap");
 
 body {
-  font-family: 'Source Code Pro', monospace;
-  display: block;  
+  font-family: "Source Code Pro", monospace;
+  display: block;
   padding: 20px;
   background-color: black;
 }
@@ -47,7 +47,8 @@ p.mid {
   text-align: center;
 }
 
-p.mid2 {
+p.mid2,
+a.mid {
   text-align: center;
   margin: auto;
 }
@@ -62,7 +63,24 @@ p.fn {
   color: yellow;
 }
 
+p.fnmid {
+  text-align: center;
+  margin: auto;
+  font-weight: 100;
+  padding: 10px;
+  color: yellow;
+}
+
 p.em {
+  font-weight: 400;
+  color: lightgray;
+}
+
+p.em2 {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 20%;
   font-weight: 400;
   color: lightgray;
 }
@@ -99,7 +117,7 @@ a:active {
 }
 
 .div-text1 {
-   padding: -10px;
+  padding: -10px;
 }
 
 div.fn {
@@ -124,7 +142,7 @@ img {
   height: 33%;
   position: relative;
   margin: auto;
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
   /*border:2px solid cyan;*/
 }
@@ -154,21 +172,49 @@ img {
   /*border:2px solid cyan;*/
 }
 
+.container6 {
+  margin-left: 25%;
+  width: 75%;
+  height: 100%;
+}
+
+.container7 {
+  width: 75%;
+  margin-left: 12.5%;
+  height: 100%;
+}
+
+.container8 {
+  margin-right: 25%;
+  width: 75%;
+  height: 100%;
+}
+
 .containerm {
   width: 1024px;
   position: relative;
   margin: auto;
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
   padding: 0;
   /*border:2px solid cyan;*/
 }
 
 .containerm2 {
-  width: 33%;
+  width: 50%;
   position: relative;
   margin: auto;
-  display: flex;  
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  /*border:2px solid cyan;*/
+}
+
+.containerm3 {
+  width: 50%;
+  position: relative;
+  margin: auto;
+  display: flex;
   flex-wrap: wrap;
   padding: 0;
   /*border:2px solid cyan;*/
@@ -207,11 +253,11 @@ img {
 }
 
 #centerem2 {
-  width: 80%;
-  height: 80%;
-  margin-left: 10%;
-  margin-top: 10%;
-  display: flex; 
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  display: flex;
   flex-wrap: wrap;
   position: absolute;
   top: 0;
@@ -231,21 +277,26 @@ img {
   height: 80%;
   margin-left: 10%;
   margin-top: 10%;
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#video {
-  
+#screentest {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
 }
 
 canvas.cover {
   width: 100%;
   height: 100%;
-  border: 1px solid yellow;
+  border: 1px solid lightgray;
   background-color: lightgray;
   opacity: 0.92;
 }
@@ -272,4 +323,56 @@ canvas.placeholder {
   background: lightgrey;
   margin: auto;
   display: flex;
+}
+
+#nav-links {
+  display: block;
+  margin: auto;
+}
+
+button.rote {
+  font-family: "Source Code Pro", monospace;
+  font-size: large;
+  color: magenta;
+  padding: 10px;
+  background-color: black;
+  border: 1px dashed grey;
+}
+
+button.rote:hover {
+  background: dimgray;
+}
+
+div.rote {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+a.rote {
+  margin: auto;
+}
+
+.drawcont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.drawright {
+  flex: 0 1 auto;
+}
+
+.drawleft {
+  flex: 0 1 auto;
+}
+
+.drawex {
+  width: 400px;
 }

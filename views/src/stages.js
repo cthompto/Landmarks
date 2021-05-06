@@ -1,5 +1,5 @@
 //for stages.html
-// log the start of the script
+//log the start of the script
 console.log("start");
 
 // set location of recognition models

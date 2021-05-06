@@ -29,49 +29,37 @@ This file handles the server information and its dependencies.
 
 Script running server side, handling interactions with the client and serving pages.
 
-### ← index.html
+### ← index.html + landmarks.js
 
-Cover compostion, my questions/explroations with live facial recognition using [face-api.js](https://github.com/justadudewhohacks/face-api.js/).
+Cover compostion, questions/explorations with live facial recognition using [face-api.js](https://github.com/justadudewhohacks/face-api.js/).
 
-### ← stages.html
+### ← stages.html + stages.js
 
 Second composition of the project, featuring text and a 4 panel interactive visual. Thinking about the steps and trajectories of the technology.
 
-### ← empire.html
+### ← empire.html + empire.js
 
 Third composition of the project, featuring text by Jorge Luis Borges and Sandy Stone. Getting to the landmark metaphor: thinking of facial recognition as mapping and the body as a landscape.
 
-### ← machine.html
+### ← machine.html + machine.js
 
 Forth composition of the project, featuring still image facial recognition, studio shot photos, and AI generated faces. Considering how gender can be expressed to a machine and what machines say to one another.
 
-### ← rote.html
+### ← rote.html + rote.js
 
-(Currently in Development) The fifth composition. This page will invite viewers to explore landmark detection by inviting them to manually execute the process on an image of their choosing. 
+(Currently in Development) The fifth composition. This page will invite viewers to explore landmark detection by inviting them to manually execute the process on an image of their choosing using [Paper.js](http://paperjs.org/).
+
+### ← draft.html + draft.js
+
+(Unlinked) Work space for testing layout and code. Viewable but not listed/linked on the live site.
 
 ### ← style.css
 
 Styling for all pages.
 
-### ← script.js
+### ← nav-links.js
 
-Main script handling the webcam and facial recognition functions.
-
-### ← script2.js
-
-Script handling the webcam and facial recognition functions on stages.html
-
-### ← script3.js
-
-Script handing the webcam and facial recognition function on empire.html
-
-### ← script4.js
-
-Script handing the still image facial recognition function on machine.html
-
-### ← drawingapp.js
-
-Script for creating in browser drawing tool used on rote.html.
+Main script handling link randomizer on each page.
 
 
 ## Development Notes/Goals/Ideas/Issues
@@ -95,3 +83,5 @@ This project is made possible with the following
 [Glitch](https://glitch.com/) for hosting and editing the code.
 
 [face-api.js](https://github.com/justadudewhohacks/face-api.js/) for live webcam facial recognition.
+
+[Paper.js](http://paperjs.org/) for drawing application.
