@@ -1,28 +1,32 @@
 <!--
+Rote (Landmarks) 
+Chelsea Thompto
+2021 - 
 
-Inviting viewers to draw as a thinking practice.
+Inviting viewers to draw as a practice for thinking through the issue of facial landmark detection and what we do by rote.
 
 Using AI generated faces and an online drawing application.
 
-(IN PROGRESS)
-Rote (Landmarks) 
-Chelsea Thompto
-2021 -
+Landmarks Code & Artist Statement:
+https://glitch.com/edit/#!/landmarks 
 
+AI generated portraits from:
+https://thispersondoesnotexist.com/
+
+Drawing application powered by Paper.js:
+http://paperjs.org/
 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Landmarks - Rote</title>
-
+    <!-- import icon -->
+    <link rel="icon" href="https://cdn.glitch.com/87379bbc-5538-4084-871e-4b2c8fdc8527%2Flandmarks-favicon3.png?v=1620335222582" />
     <!-- import stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-
     <!-- Load the Paper.js library -->
     <script type="text/javascript" src="/paper-full.js"></script>
     <!-- Load your Paper.js file -->
@@ -31,13 +35,12 @@ Chelsea Thompto
       src="src/rote.js"
       canvas="drawingBoard"
     ></script>
-
     <!-- import nav-link randomizer-->
     <script src="src/nav-links.js" defer></script>
     <script src="src/download.js" defer></script>
   </head>
-
   <body>
+    <!--Main Content-->
     <div class="containerm2">
       <h1 class="mid2">Rote</h1>
       <br /><br />
@@ -106,7 +109,6 @@ Chelsea Thompto
           4 Points from Bridge To Tip of Nose<br />
           5 Points from Left to Right Nostril<br /><br />
         </dd>
-
         Lips: 20 Points and 20 Lines<br />
         <dd>
           10 Points for Upper Lip<br />
@@ -118,7 +120,6 @@ Chelsea Thompto
           3 Points on Inner Edge<br />
           Corners overlap<br /><br />
         </dd>
-
         Jaw: 17 Points and 16 Lines<br />
         <dd>8 per side ending at Ear</dd>
         <br />
@@ -173,7 +174,6 @@ Chelsea Thompto
           4 Points from Bridge To Tip of Nose<br />
           5 Points from Left to Right Nostril<br /><br />
         </dd>
-
         Lips: 20 Points and 20 Lines<br />
         <dd>
           10 Points for Upper Lip<br />
@@ -185,13 +185,13 @@ Chelsea Thompto
           3 Points on Inner Edge<br />
           Corners overlap<br /><br />
         </dd>
-
         Jaw: 17 Points and 16 Lines<br />
         <dd>8 per side ending at Ear</dd>
         <br />
       </dl>
         </div>
         <br /><br />
+        <!--Drawing download button.-->
         <div class="rote">
           <br /><br />
           <a class="rote" id="download" download="rote.png">
@@ -201,6 +201,7 @@ Chelsea Thompto
           </a>
         </div>
       </div>
+      <!--Drawing application with generated face.-->
       <div class="drawright">
         <canvas
           id="drawingBoard"
@@ -291,6 +292,7 @@ Chelsea Thompto
       <br /><br />
       <br /><br />
     </div>
+    <!--Footer: Links randomized with nav-links.js-->
     <div class="fn">
       <br />
       <br />
@@ -331,9 +333,10 @@ Chelsea Thompto
         by right clicking on the page and selecting "view source" or by going to
         <a href="https://glitch.com/edit/#!/landmarks">HERE</a>.)
       </p>
--->
+      -->
     </div>
   </body>
+  <!--Load image to be used by drawing application.-->
   <img
     id="bgImg"
     src="https://cdn.glitch.com/87379bbc-5538-4084-871e-4b2c8fdc8527%2Fmachine1.jpg?v=1613855450344"

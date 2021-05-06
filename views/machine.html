@@ -1,43 +1,47 @@
 <!--
-
-Compostion started in the last quarter of Feb.
-
-Features images from https://www.thispersondoesnotexist.com/
-
 Machine (Landmarks) 
 Chelsea Thompto
 2021 -
 
--->
+(Compostion started in the last quarter of Feb.)
 
+Exploring how the machine reads my face vs. machine generated faces. Brings algorithms into conversation with one another.
+
+Landmarks Code & Artist Statement:
+https://glitch.com/edit/#!/landmarks 
+
+Facial recognition powered by face-api.js:
+https://github.com/justadudewhohacks/face-api.js/
+
+AI generated portraits from:
+https://thispersondoesnotexist.com/
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Landmarks - Machine</title>
-
+    <!-- import icon -->
+    <link rel="icon" href="https://cdn.glitch.com/87379bbc-5538-4084-871e-4b2c8fdc8527%2Flandmarks-favicon3.png?v=1620335222582" />
     <!-- import stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-
     <!-- import face-api.js -->
     <script src="build/face-api.min.js"></script>
-
     <!-- import the javascript file that processes the still images-->
     <script src="src/machine.js" defer></script>
-    
     <!-- import nav-link randomizer-->
     <script src="src/nav-links.js" defer></script>
   </head>
-
   <body>
+    <!--Main Content-->
     <div class="containerm2">
       <h1 class="mid2">Machine</h1>
       <br /><br />
     </div>
     <br /><br />
+    <!--9 panel self portrait image.-->
     <div class="containerm">
       <img
         id="9panel2"
@@ -57,7 +61,6 @@ Chelsea Thompto
           4 Points from Bridge To Tip of Nose<br />
           5 Points from Left to Right Nostril<br /><br />
         </dd>
-
         Lips: 20 Points and 20 Lines<br />
         <dd>
           10 Points for Upper Lip<br />
@@ -70,13 +73,13 @@ Chelsea Thompto
           3 Points on Inner Edge<br />
           Corners overlap<br /><br />
         </dd>
-
         Jaw: 17 Points and 16 Lines<br />
         <dd>8 per side ending at Ear</dd>
         <br />
       </dl>
       <br />
     </div>
+    <!--9 panel self portrait image with face-api.js applied.-->
     <div class="containerm">
       <img
         id="9panel"
@@ -126,7 +129,7 @@ Chelsea Thompto
         <br /><br /><br /><br /><br />
       </p>
     </div>
-
+    <!--9 panel portrait image, protraits from https://www.thispersondoesnotexist.com/.-->
     <div class="containerm">
       <img
         id="9panel3"
@@ -165,7 +168,6 @@ Chelsea Thompto
           4 Points from Bridge To Tip of Nose<br />
           5 Points from Left to Right Nostril<br /><br />
         </dd>
-
         Lips: 20 Points and 20 Lines<br />
         <dd>
           10 Points for Upper Lip<br />
@@ -178,16 +180,14 @@ Chelsea Thompto
           3 Points on Inner Edge<br />
           Corners overlap<br /><br />
         </dd>
-
         Jaw: 17 Points and 16 Lines<br />
         <dd>8 per side ending at Ear</dd>
         <br />
       </dl>
       <br />
     </div>
-
     <br /><br /><br />
-
+    <!--9 panel portrait image, protraits from https://www.thispersondoesnotexist.com/ with face-api.js applied.-->
     <div class="containerm">
       <img
         id="9panel4"
@@ -212,6 +212,7 @@ Chelsea Thompto
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </p>
     </div>
+    <!--Footer: Links randomized with nav-links.js-->
     <div class="fn">
       <div id="nav-links">
         <div>

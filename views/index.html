@@ -1,5 +1,4 @@
 <!--
-
 Landmarks 
 Chelsea Thompto
 2021 -
@@ -9,31 +8,29 @@ Landmarks is an exploration of the ways artificial intelligence, and specificall
 Landmarks Code & Artist Statement:
 https://glitch.com/edit/#!/landmarks 
 
+Facial recognition powered by face-api.js:
+https://github.com/justadudewhohacks/face-api.js/
 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Landmarks - Chelsea Thompto</title>
-
+    <!-- import icon -->
+    <link rel="icon" href="https://cdn.glitch.com/87379bbc-5538-4084-871e-4b2c8fdc8527%2Flandmarks-favicon3.png?v=1620335222582" />
     <!-- import stylesheet -->
     <link rel="stylesheet" href="/style.css" />
-
     <!-- import face-api.js -->
     <script src="build/face-api.min.js"></script>
-
     <!-- import the main javascript file -->
     <script src="src/landmarks.js" defer></script>
-    
     <!-- import nav-link randomizer-->
     <script src="src/nav-links.js" defer></script>
   </head>
-
   <body>
+    <!--Main Content-->
     <div>
       <h1 class="mid">Landmarks</h1>
       <br /><br /><br />
@@ -69,8 +66,7 @@ https://glitch.com/edit/#!/landmarks
       </p>
       <br /><br /><br />
     </div>
-
-    <!-- container for video and overlay from face-api.js -->
+    <!--Container for video and overlay from face-api.js.-->
     <div class="container">
       <video
         id="video"
@@ -82,7 +78,6 @@ https://glitch.com/edit/#!/landmarks
       <div id="center">
       </div>
     </div>
-
     <div>
       <br /><br /><br /><br />
       <br /><br /><br /><br />
@@ -91,6 +86,7 @@ https://glitch.com/edit/#!/landmarks
       </p>
       <br /><br /><br /><br /><br /><br /><br /><br />
     </div>
+    <!--Footer: Links randomized with nav-links.js-->
     <div class="fn">
       <div id="nav-links">
         <div>
@@ -126,16 +122,11 @@ https://glitch.com/edit/#!/landmarks
         <a href="https://glitch.com/edit/#!/landmarks">HERE</a>.)
       </p>
     </div>
-
+    <!--Script for alert window about webcam facial recognition.-->
     <script type="text/javascript">
       alert(
         "Welcome to Landmarks, this interactive artwork explores facial recognition and the politics of technologies of visualization. Part of this exploration uses your webcam to display facial recognition outputs. Your data is not stored or shared during this process and the algorithm is not improved or modified based on your image. If you choose not to use your webcam, you can still see the text and layout of the site without the interactive visuals. This project is still in development and will eventually include a parallel version of the site using pre recorded video in place of live webcam feedback. To explore the code and development process, head to: https://glitch.com/edit/#!/landmarks"
       );
     </script>
-    <!-- Glitch.com button -->
-    <!--
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
--->
   </body>
 </html>

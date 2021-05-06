@@ -1,4 +1,4 @@
-//for machine.html
+//for draft.html
 // log the start of the script
 console.log("start");
 
