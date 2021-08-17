@@ -64,9 +64,9 @@ Main script handling link randomizer on each page.
 
 ## Development Notes/Goals/Ideas/Issues
 
-- Update - 3/30: Just went from a static site to a node.js server. This will allow me to write and host an in-browser drawing allplication for people to manually explore facial recognition. It will also allow me to invite people to submit their drawings.
+- Update - 7/26 Developing new pages to be used for a video art piece relating.
 
-- On deck Landmarks of the landscape and of the body - exploring this metaphor through ... ?
+- On deck Landmarks of the landscape and of the body - exploring this metaphor through procedural video art piece and an exploration of cartographic and medical instruments
 
 
 ## Theory and Inspiration
