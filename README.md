@@ -7,6 +7,8 @@ This site is under constant construction and revision and will be open for viewi
 
 *Landmarks* asks us to consider how technology sees us and what happens when it fails to see us for who we are?
 
+The live site can be viewed at: (https://landmarks.cloud/)
+
 Find out more [about my work](https://www.chelsea.technology).
 
 To view the live site next to the code, click the "Show" dropdown on the top left of this page and select "Next to The Code".
@@ -80,7 +82,9 @@ This project is made possible with the following
 
 [Laboratory Residency](https://residency.laboratoryspokane.com/) for providing space/time and finanical support in the form of a digital artist residency.
 
-[Glitch](https://glitch.com/) for hosting and editing the code.
+[Glitch](https://glitch.com/) for initial hosting and editing the code.
+
+[DigitalOCean](https://www.digitalocean.com/) for current hosting.
 
 [face-api.js](https://github.com/justadudewhohacks/face-api.js/) for live webcam facial recognition.
 
