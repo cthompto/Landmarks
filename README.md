@@ -7,7 +7,7 @@ This site is under constant construction and revision and will be open for viewi
 
 *Landmarks* asks us to consider how technology sees us and what happens when it fails to see us for who we are?
 
-The live site can be viewed at: (https://landmarks.cloud/)
+The live site can be viewed at: https://landmarks.cloud/
 
 Find out more [about my work](https://www.chelsea.technology).
 
