@@ -31,6 +31,9 @@ pre {
 
 p {
   color: magenta;
+}
+
+p.left {
   padding-left: 75px;
 }
 
