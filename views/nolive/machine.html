@@ -1,0 +1,252 @@
+<!--
+Machine (Landmarks)
+Chelsea Thompto
+2021 -
+
+(Compostion started in the last quarter of Feb.)
+
+Exploring how the machine reads my face vs. machine generated faces. Brings algorithms into conversation with one another.
+
+Landmarks Code & Artist Statement:
+https://glitch.com/edit/#!/landmarks
+
+Facial recognition powered by face-api.js:
+https://github.com/justadudewhohacks/face-api.js/
+
+AI generated portraits from:
+https://thispersondoesnotexist.com/
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landmarks - Machine</title>
+    <!-- import icon -->
+    <link rel="icon" href="../assets/landmarks-favicon3.png" />
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import face-api.js -->
+    <script src="../build/face-api.min.js"></script>
+    <!-- import the javascript file that processes the still images-->
+    <script src="src/machine.js" defer></script>
+    <!-- import nav-link randomizer-->
+    <script src="src/nav-links.js" defer></script>
+  </head>
+  <body>
+    <!--Main Content-->
+    <div class="containerm2">
+      <h1 class="mid2">Machine</h1>
+      <br /><br />
+    </div>
+    <br /><br />
+    <!--9 panel self portrait image.-->
+    <div class="containerm">
+      <img
+        id="9panel2"
+        src="../assets/cst-sm.jpg"
+        crossorigin="anonymous"
+        width="1024"
+      />
+    </div>
+    <br />
+    <div class="containerm2">
+      <dl class="fnem2">
+        <b>Facial Landmark Rules:</b><br /><br />
+        Brows: 5 Points and 4 Lines Each<br /><br />
+        Eyes: 6 Points and 6 Lines Each<br /><br />
+        Nose: 9 Points and 8 Lines<br />
+        <dd>
+          4 Points from Bridge To Tip of Nose<br />
+          5 Points from Left to Right Nostril<br /><br />
+        </dd>
+        Lips: 20 Points and 20 Lines<br />
+        <dd>
+          10 Points for Upper Lip<br />
+          10 Points for Lower Lip<br />
+        </dd>
+        <br />
+        For Each Lip:<br />
+        <dd>
+          5 Points on Outer Edge<br />
+          3 Points on Inner Edge<br />
+          Corners overlap<br /><br />
+        </dd>
+        Jaw: 17 Points and 16 Lines<br />
+        <dd>8 per side ending at Ear</dd>
+        <br />
+      </dl>
+      <br />
+    </div>
+    <!--9 panel self portrait image with face-api.js applied.-->
+    <div class="containerm">
+      <img
+        id="9panel"
+        src="../assets/cst-sm.jpg"
+        crossorigin="anonymous"
+        width="1024"
+      />
+      <div id="center">
+      </div>
+    </div>
+    <div class="containerm2">
+      <p class="fnem2">
+        <br /><br />
+        This is how the system maps and labels the features of the face.
+        <br /><br /><br />
+        Under this system, my face is recognized with a maximum confidence of
+        only 89 percent across 9 angles. In one image, my face is not recognized
+        at all. In the others, my gender is incorrectly and confidently reported
+        at a high of 95 percent confidence and a low of 62.
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </p>
+      <p class="fnem2 mid2">
+        How can I convince this machine of my gender?
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </p>
+      <p class="fnem2">
+        How can I communicate something that is the sum of so many little
+        moments, gestures, and decisions?
+        <br /><br /><br /><br />
+        The relative lightness of my skin serves to make me more legible to
+        facial recognition software as
+        <a
+          href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf"
+          >studies</a
+        >
+        have shown that these technologies often fail to accurately recognize
+        dark-skinned faces. Yet as this technology calibrated to whiteness gazes
+        upon my face, I am still misgendered. <br /><br />
+        As these technologies are finding their way into the hands of law
+        enforcement, I am left thinking about how trans people of color are
+        particularly threatened by the intersection of this transphobic and racist
+        tech with transphobic and racist policing.
+        <br /><br /><br /><br />
+      </p>
+      <p class="fnem2 mid2">
+        Consider another set of faces:
+        <br /><br /><br /><br /><br />
+      </p>
+    </div>
+    <!--9 panel portrait image, protraits from https://www.thispersondoesnotexist.com/.-->
+    <div class="containerm">
+      <img
+        id="9panel3"
+        src="../assets/not_real_9_1lg.jpg"
+        crossorigin="anonymous"
+        width="1024"
+      />
+    </div>
+    <br /><br /><br /><br />
+    <div class="containerm2">
+      <p class="fnem2">
+        None of these faces belong to a human body, they were generated by another algorithm,
+        specifically,
+        <a href="https://www.thispersondoesnotexist.com/"
+          >a generative adversarial network</a
+        >
+        trained on 70,000 faces and tasked with creating new ones. They are
+        composite images: an assembly of textures, shapes, and colors gathered
+        into formations according to the algorithm's rules for what constitutes a
+        face.
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </p>
+
+      <p class="fnem2 mid2">
+        What happens when we point one algorithm at another?
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </p>
+    </div>
+    <div class="containerm2">
+      <dl class="fnem2">
+        <b>Facial Landmark Rules:</b><br /><br />
+        Brows: 5 Points and 4 Lines Each<br /><br />
+        Eyes: 6 Points and 6 Lines Each<br /><br />
+        Nose: 9 Points and 8 Lines<br />
+        <dd>
+          4 Points from Bridge To Tip of Nose<br />
+          5 Points from Left to Right Nostril<br /><br />
+        </dd>
+        Lips: 20 Points and 20 Lines<br />
+        <dd>
+          10 Points for Upper Lip<br />
+          10 Points for Lower Lip<br />
+        </dd>
+        <br />
+        For Each Lip:<br />
+        <dd>
+          5 Points on Outer Edge<br />
+          3 Points on Inner Edge<br />
+          Corners overlap<br /><br />
+        </dd>
+        Jaw: 17 Points and 16 Lines<br />
+        <dd>8 per side ending at Ear</dd>
+        <br />
+      </dl>
+      <br />
+    </div>
+    <br /><br /><br />
+    <!--9 panel portrait image, protraits from https://www.thispersondoesnotexist.com/ with face-api.js applied.-->
+    <div class="containerm">
+      <img
+        id="9panel4"
+        src="../assets/not_real_9_1lg.jpg"
+        crossorigin="anonymous"
+        width="1024"
+      />
+      <div id="center2">
+      </div>
+    </div>
+    <div class="containerm2">
+      <p class="fnem2 mid2">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        What are they saying to each other?
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </p>
+      <p class="fnem2">
+        In their conversation, the composite faces are more legible than my own.
+        They see each other with greater certainty and clarity. They can agree
+        on what a face is and place it into specific emotional and gender
+        categories.
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </p>
+    </div>
+    <!--Footer: Links randomized with nav-links.js-->
+    <div class="fn">
+      <div id="nav-links">
+        <div>
+          <p class="mid">
+             <a href="./stages.html">Stages</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="./empire.html">Empire</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="./rote.html">Rote</a>
+          </p>
+        </div>
+        <div>
+          <p class="mid">
+            <a href="./index.html">Landmarks</a>
+          </p>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <p class="fn">
+        (Note: The facial recognition used on this page is performed live but
+        is not improved or modified based on this page. No data is collected or
+        shared through this project.<br /><br />This project is best viewed on a
+        non-mobile device. As a project in the early stages of development, it
+        may not be fully compatible with all browsers and hardware.<br /><br />More
+        information can be found by viewing the source code of this page, either
+        by right clicking on the page and selecting "view source" or by going to
+        <a href="https://github.com/cthompto/Landmarks">HERE</a>.)
+      </p>
+    </div>
+  </body>
+</html>

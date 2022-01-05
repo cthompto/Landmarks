@@ -1,0 +1,398 @@
+/* Style for all live pages. */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: "Source Code Pro", monospace;
+  display: block;
+  padding: 20px;
+  background-color: black;
+}
+
+h1 {
+  color: cyan;
+}
+
+h1.mid {
+  text-align: center;
+}
+
+h1.mid2 {
+  text-align: center;
+  margin: auto;
+}
+
+pre {
+  color: magenta;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 75%;
+}
+
+p {
+  color: magenta;
+}
+
+p.left {
+  padding-left: 75px;
+}
+
+p.stages {
+  color: magenta;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-left: 75px;
+}
+
+p.video-break {
+  line-height: 75%;
+}
+
+p.mid {
+  text-align: center;
+}
+
+p.mid2,
+a.mid {
+  text-align: center;
+  margin: auto;
+}
+
+p.right {
+  text-align: right;
+  padding-right: 75px;
+}
+
+p.fn {
+  font-weight: 100;
+  padding: 10px;
+  color: yellow;
+}
+
+p.fnmid {
+  text-align: center;
+  margin: auto;
+  font-weight: 100;
+  padding: 10px;
+  color: yellow;
+}
+
+p.em {
+  font-weight: 400;
+  color: lightgray;
+}
+
+p.em2 {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 20%;
+  font-weight: 400;
+  color: lightgray;
+}
+
+p.fnem {
+  font-weight: 100;
+  color: yellow;
+}
+
+p.fnem2 {
+  font-weight: 100;
+  color: yellow;
+}
+
+dl.fnem2 {
+  font-weight: 100;
+  color: yellow;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover {
+  color: cyan;
+}
+
+a:active {
+  color: white;
+}
+
+.div-text1 {
+  padding: -10px;
+}
+
+div.fn {
+  margin: auto;
+  width: 75%;
+}
+
+img {
+  padding: 0;
+}
+
+.container {
+  width: 75%;
+  height: 75%;
+  position: relative;
+  margin: auto;
+  /*border:2px solid cyan;*/
+}
+
+.container2 {
+  width: 33%;
+  height: 33%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*border:2px solid cyan;*/
+}
+
+.container3 {
+  width: 720px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  /*border:2px solid cyan;*/
+}
+
+.container4 {
+  width: 75%;
+  height: 100%;
+  margin-left: 12.5%;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+}
+
+.container5 {
+  width: 66%;
+  height: 66%;
+  position: relative;
+  margin: auto;
+  /*border:2px solid cyan;*/
+}
+
+.container6 {
+  margin-left: 25%;
+  width: 75%;
+  height: 100%;
+}
+
+.container7 {
+  width: 75%;
+  margin-left: 12.5%;
+  height: 100%;
+}
+
+.container8 {
+  margin-right: 25%;
+  width: 75%;
+  height: 100%;
+}
+
+.containerm {
+  width: 1024px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  /*border:2px solid cyan;*/
+}
+
+.containerm2 {
+  width: 50%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  /*border:2px solid cyan;*/
+}
+
+.containerm3 {
+  width: 50%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  /*border:2px solid cyan;*/
+}
+
+.containerwf {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  margin: auto;
+  /*border:2px solid cyan;*/
+}
+
+#center {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#center2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#center3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#centerem {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#centerem2 {
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#centerem3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#centerem4 {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#screentest {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+canvas.cover {
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  opacity: 0.92;
+}
+
+canvas.wayfinding {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+canvas.stages {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+canvas.exploit {
+  width: 100%;
+  height: 100%;
+  border: 1px dashed grey;
+}
+
+canvas.placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+#drawingBoard {
+  background: lightgrey;
+  margin: auto;
+  display: flex;
+}
+
+#nav-links {
+  display: block;
+  margin: auto;
+}
+
+button.rote {
+  font-family: "Source Code Pro", monospace;
+  font-size: large;
+  color: magenta;
+  padding: 10px;
+  background-color: black;
+  border: 1px dashed grey;
+}
+
+button.rote:hover {
+  background: dimgray;
+}
+
+div.rote {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+a.rote {
+  margin: auto;
+}
+
+.drawcont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.drawright {
+  flex: 0 1 auto;
+}
+
+.drawleft {
+  flex: 0 1 auto;
+}
+
+.drawex {
+  width: 400px;
+}
