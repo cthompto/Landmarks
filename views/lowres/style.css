@@ -413,3 +413,20 @@ a.rote {
     width: 75%;
   }
 }
+
+@media (max-width: 500px) {
+  .container {
+    width: 97.5%;
+    height: 97.5%;
+  }
+  .container2 {
+    width: 80%;
+    height: 80%;
+  }
+  .containerm {
+    width: 97.5%;
+  }
+  .containerm2 {
+    width: 90%;
+  }
+}
