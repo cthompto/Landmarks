@@ -396,3 +396,20 @@ a.rote {
 .drawex {
   width: 400px;
 }
+
+@media (max-width: 1100px) {
+  .container {
+    width: 95%;
+    height: 95%;
+  }
+  .container2 {
+    width: 66%;
+    height: 66%;
+  }
+  .containerm {
+    width: 95%;
+  }
+  .containerm2 {
+    width: 75%;
+  }
+}
