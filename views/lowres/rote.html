@@ -3,15 +3,16 @@ Rote (Landmarks)
 Chelsea Thompto
 2021 -
 
-Inviting viewers to draw as a practice for thinking through the issue of facial landmark detection and what we do by rote.
+Inviting viewers to draw as a practice for thinking through the issue of
+facial landmark detection and what we do by rote.
 
 Using AI generated faces and an online drawing application.
 
 Landmarks Code & Artist Statement:
-https://glitch.com/edit/#!/landmarks
+https://github.com/cthompto/Landmarks
 
-AI generated portraits from:
-https://thispersondoesnotexist.com/
+Note: This is the low resolution/bandwidth version of the site, to view other
+version please visit: https://landmarks.cloud/
 
 Drawing application powered by Paper.js:
 http://paperjs.org/
@@ -24,23 +25,23 @@ http://paperjs.org/
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Landmarks - Rote</title>
     <!-- import icon -->
-    <link rel="icon" href="/assets/landmarks-favicon3.png" />
+    <link rel="icon" href="../assets/landmarks-favicon3.png" />
     <!-- import stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- image randomizer-->
-    <script src="src/pic.js">
+    <script src="../src/pic2.js">
     </script>
     <!-- Load the Paper.js library -->
-    <script type="text/javascript" src="/paper-full.js"></script>
+    <script type="text/javascript" src="../paper-full.js"></script>
     <!-- Load your Paper.js file -->
     <script
       type="text/paperscript"
-      src="src/rote.js"
+      src="../src/rote.js"
       canvas="drawingBoard"
     ></script>
     <!-- import nav-link randomizer-->
-    <script src="src/nav-links.js" defer></script>
-    <script src="src/download.js" defer></script>
+    <script src="../src/nav-links.js" defer></script>
+    <script src="../src/download.js" defer></script>
   </head>
   <body>
     <!--Main Content-->
@@ -302,22 +303,22 @@ http://paperjs.org/
       <div id="nav-links">
         <div>
           <p class="mid">
-            <a href="/stages.html">Stages</a>
+            <a href="./stages.html">Stages</a>
           </p>
         </div>
         <div>
           <p class="mid">
-            <a href="/empire.html">Empire</a>
+            <a href="./empire.html">Empire</a>
           </p>
         </div>
         <div>
           <p class="mid">
-            <a href="/machine.html">Machine</a>
+            <a href="./machine.html">Machine</a>
           </p>
         </div>
         <div>
           <p class="mid">
-            <a href="/index.html">Landmarks</a>
+            <a href="./index.html">Landmarks</a>
           </p>
         </div>
       </div>
@@ -337,7 +338,7 @@ http://paperjs.org/
   <!--Load image to be used by drawing application.-->
   <img
     id="bgImg"
-    src="./assets/rote1.jpg"
+    src="../assets/rote1.jpg"
     style="display: none;"
     crossorigin="anonymous"
   />
