@@ -419,7 +419,11 @@ img.empire_img {
   .container5 {
     width: 90%;
     height: 90%;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+  }
+  .container3 {
+    width: 90%;
+    height: auto;
   }
   img.empire_img {
     margin-top: 150px;
@@ -430,7 +434,11 @@ img.empire_img {
   .container5 {
     width: 95%;
     height: 95%;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
+  }
+  .container3 {
+    width: 95%;
+    height: auto;
   }
   img.empire_img {
     margin-top: 250px;
@@ -455,7 +463,11 @@ img.empire_img {
   .container5 {
     width: 95%;
     height: 95%;
-    padding-bottom: 150px;
+    padding-bottom: 350px;
+  }
+  .container3 {
+    width: 95%;
+    height: auto;
   }
   img.empire_img {
     margin-top: 250px;
