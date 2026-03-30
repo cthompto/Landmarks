@@ -3,7 +3,7 @@
 console.log("start");
 
 // set location of recognition models
-const MODEL_URL = 'https://rawgit.com/justadudewhohacks/face-api.js/master/weights'
+const MODEL_URL = '../../build/weights'
 
 // identitfy img element from html
 const img = document.getElementById("9panel")
